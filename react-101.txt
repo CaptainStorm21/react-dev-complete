@@ -1,0 +1,32 @@
+// keyconcepts
+// 1. dont' touch DOM. React works with it
+// examples: 
+// document.getElementById(id)
+// window.onLoad
+// 
+
+
+// But components are simply just JavaScript functions 
+// that received some sort of input or attributes which
+// we call props
+// in return it returns this thing that looks like HTML but inside of the JS 
+
+//components can be built like this as a function or even as a class.
+
+//the key here is that based on the state and these components that we built 
+// we have an entire componentthat we can add to our page and reuse maybe over here as 
+// well if we wanted to.
+
+//one way flow
+// js object that describes our app
+//as soon as there is a status change, all components 
+// 
+
+//react keywords
+//declarative
+//jsx
+//components
+//state
+//props
+//virtualdom
+
