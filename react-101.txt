@@ -34,6 +34,6 @@
 npm i react 
 
 //create react app
-npm create-react-app react-basics
+npx create-react-app react-basics
 cd react-basics
 
