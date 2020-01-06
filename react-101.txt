@@ -30,3 +30,10 @@
 //props
 //virtualdom
 
+//installs react globallly
+npm i react 
+
+//create react app
+npm create-react-app react-basics
+cd react-basics
+
