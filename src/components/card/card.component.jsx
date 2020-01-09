@@ -3,7 +3,8 @@ import './card.styles.css';
 
 export const Card = props => (
     <div className = 'card-container'>
-        <img alt="monster" src={`https://robohash.org/${props.monster.id}?set=set2`} />
-        <h4> {props.monster.name }</h4>
+        <img alt="monster" src={`https://robohash.org/${props.monster.id}?set=set2&size=180x180`} />
+        <h3> {props.monster.name }</h3>
+        <p> {props.monster.email} </p>
     </div>
 )
