@@ -9,7 +9,9 @@ class App extends Component {
     super();
 
     this.state = {
-      monsters: []
+      monsters: [],
+      //adding logic for search input 
+      searchField: ''
     };
   }
 
@@ -20,12 +22,25 @@ class App extends Component {
   }
 
   render() {
+    // filtering the search input
+    // destructuring allows is pull properies off of an bject 
+    const { monsters, searchField } = this.state;
+    //same as 
+    // const monsters = this.state.monsters;
+    // const searchField = this.state.searchField;
+    const filteredMonsters = monsters.filter( monster => 
+      monster.name.toLowerCase().includes(searchField.toLowerCase())
+    );
+
     return (
       <div className="App">
-        {/* we are passing monsters as prop  */}
-        <CardList monsters = {this.state.monsters} />
-          {/* {this.state.monsters.map(monster => (
-          <h3 key={monster.id}> {monster.name} </h3> */}
+       
+        <input type="search" placeholder="Find your monster" onChange = { e => this.setState ({ searchField: e.target.value })}
+        />
+
+
+        {/* <CardList monsters = {this.state.monsters} /> */}
+        <CardList monsters = { filteredMonsters } />
       </div>
     );
   }
